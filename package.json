@@ -1,0 +1,17 @@
+{
+    "name": "beatube"
+  , "version": "0.0.1"
+  , "private": false
+  , "dependencies": {
+      "cheerio": "0.13.1"
+    , "cron": "1.0.1"
+    , "mongoose": "3.8.4"
+    , "request": "2.33.0"
+    , "socket.io": "0.9.16"
+    , "newrelic": "1.3.0"
+  }
+  , "engines": {
+      "node": "0.8.16"
+    , "npm": "1.1.69"
+  }
+}

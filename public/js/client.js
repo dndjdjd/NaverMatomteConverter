@@ -72,7 +72,7 @@ function getUrlVars(){
 function getLocation(){
 	var url = $("#url").val();
 	socket.emit('get', url, function (json){
-		$("#result").text(JSON.stringify(json, null, "    "));
+		$("#result").val(JSON.stringify(json, null, "    "));
 		// var div, li;
 		// for(var i = 0; json.length > i; i++){
 

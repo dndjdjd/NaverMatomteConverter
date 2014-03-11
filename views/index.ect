@@ -4,12 +4,6 @@
 	<title>JSON.parse(NAVERまとめ);</title>
 	<link rel="stylesheet" href="/public/css/bootstrap.min.css"></style>
 	<link rel="stylesheet" href="/public/css/bootstrap-theme.min.css"></style>
-<!--
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
--->
-
 </head>
 <body style="background: #DDD; padding-top: 50px;">
 	<!-- nav -->
@@ -27,7 +21,6 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<div class="navbar-text navbar-right" style="margin: 10 0;">
-<!-- 					<div class="btn btn-default" data-toggle="modal" data-target="#aboutModal"><span class="glyphicon glyphicon-question-sign"></span> About</div> -->
 				</div>
 			</div>
 		</nav>
@@ -37,13 +30,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" style="padding: 15 0 35 0;">
+				<p>NAVERまとめから位置情報を持つデータを取得して、JSON形式で返します。</p>	
 				<div class="input-group">
 					<input id="url" type="text" class="form-control" placeholder="Please enter the URL that you want to convert to JSON format.">
 			    	<span class="input-group-btn">
 			    	<button class="btn btn-default" type="button" onClick="getLocation();">Convert !</button>
 			    	</span>
 				</div><!-- /input-group -->
-				<p>example: http://matome.naver.jp/odai/2138233799583739401</p>
+				<p>example: http://matome.naver.jp/odai/2134519339022942401</p>
 				<textarea id="result" type="textarea" class="form-control" rows="15"></textarea>
 			</div>
 
@@ -53,7 +47,6 @@
 
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
-	<script type="text/javascript" src="/public/js/swfobject.js"></script>
 	<script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/public/js/jquery.socialbutton-1.9.1.js"></script>
 	<script type="text/javascript" src="/public/js/client.js"></script>

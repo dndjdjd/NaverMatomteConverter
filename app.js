@@ -46,7 +46,7 @@ app.use(app.router);
 // Routing
 var routes = require('./routes');
 app.get('/', routes.index);
-// app.get('/', routes.index);
+app.get('/json', routes.json);
 
 var httpServer = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

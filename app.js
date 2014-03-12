@@ -49,20 +49,22 @@ app.get('/', routes.index);
 app.get('/json', routes.json);
 
 var httpServer = http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+	console.log('Express server listening on port ' + app.get('port'));
 });
+
+// ソケットをやめてajaxに。
 
 // ソケット通信開始 ==========================
-var socketIo = require('socket.io').listen(httpServer);
+// var socketIo = require('socket.io').listen(httpServer);
 
-socketIo.sockets.on('connection', function(socket){
-	var Scraping = require('./lib/scraping').Scraping;
-	var scraping = new Scraping();
+// socketIo.sockets.on('connection', function(socket){
+// 	var Scraping = require('./lib/scraping').Scraping;
+// 	var scraping = new Scraping();
 
-	// JSON取得要求
-	socket.on('get', function(url, callback){
-		scraping.getLocation(url, function(location){
-			callback(location);
-		});
-	});
-});
+// 	// JSON取得要求
+// 	socket.on('get', function(url, callback){
+// 		scraping.getLocation(url, function(location){
+// 			callback(location);
+// 		});
+// 	});
+// });
